@@ -2,9 +2,9 @@
 
 Minimal, responsive React/Vite portal for **B.Tech 2019 Scheme**, Computer Science and Cyber Security, with S1 & S2 combined, plus S3–S8.
 
-### The WebApp is Live at : https://be-techie-notes.vercel.app/
+### The Website is Live at : https://be-techie-notes.vercel.app/
 
-### If you find this web app usefull give me a ⭐.  
+### If you find this website usefull give me a ⭐.  
 
 ## Project structure
 
