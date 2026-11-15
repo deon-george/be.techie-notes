@@ -21,3 +21,26 @@
   line-height: 1.5;
   overflow-wrap: anywhere;
 }
+
+@media (max-width: 680px) {
+  .hero-meta, .section-footer, .breadcrumbs, .modal-foot { flex-wrap: wrap; }
+  .breadcrumbs button, .explorer-title h1, .notice p { overflow-wrap: anywhere; }
+  .explorer-title > div, .search-wrap, .search-wrap input { min-width: 0; }
+  .menu-toggle, .file-actions a, .file-actions button, .modal-head button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .modal { padding: 8px; }
+  .modal-dialog { height: 94dvh; min-width: 0; }
+  .modal-dialog iframe { min-height: 0; }
+}
+@media (max-width: 480px) {
+  .semester-grid { grid-template-columns: minmax(0, 1fr); }
+  .semester-card { min-height: 160px; padding: 18px; }
+  .card-bottom strong { font-size: 15px; }
+  .card-bottom div > span { font-size: 12px; }
+  .file-row { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 12px; }
+  .file-actions { grid-column: 2; flex-wrap: wrap; }
+  .file-info strong { white-space: normal; overflow-wrap: anywhere; }
+  .modal-foot span { display: block; }
+}
