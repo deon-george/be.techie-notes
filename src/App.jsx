@@ -127,12 +127,12 @@ function App() {
         <img className="site-logo" src="/brand/logo.png" alt=""/>
         <span className="site-wordmark"><img src="/brand/wordmark.png" alt="Be.Techie Notes"/></span>
       </button>
-      <nav className={menuOpen ? 'navlinks open' : 'navlinks'}>
+      <nav id="primary-navigation" className={menuOpen ? 'navlinks open' : 'navlinks'}>
         <button onClick={goHome} className={!chosen ? 'active' : ''}>Home</button>
         <a href={ROOT_URL} target="_blank" rel="noreferrer">Google Drive <ExternalLink size={13}/></a>
         <span className="github-link">2019 Scheme <span className="tiny-orange">✦</span></span>
       </nav>
-      <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">{menuOpen ? <X size={22}/> : <Menu size={22}/>}</button>
+      <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu" aria-expanded={menuOpen} aria-controls="primary-navigation">{menuOpen ? <X size={22}/> : <Menu size={22}/>}</button>
     </div></header>
 
     <main>
